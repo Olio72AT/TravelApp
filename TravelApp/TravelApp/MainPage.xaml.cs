@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
@@ -13,6 +14,7 @@ namespace TravelApp
         public MainPage()
         {
             InitializeComponent();
+            SimulateInternet();
         }
 
         private void LoginButton_Clicked(object sender, EventArgs e)
@@ -31,6 +33,18 @@ namespace TravelApp
                 Navigation.PushAsync(new HomePage());
 
             }
+        }
+
+        public static async Task GetData()
+        {
+            Thread.Sleep(2000);   // Simulation of Internet access
+        }
+
+        public async void SimulateInternet()
+        {
+            Console.WriteLine("before");
+            await GetData();
+            Console.WriteLine("after"); 
         }
     }
 }
