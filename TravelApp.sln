@@ -7,7 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelApp.Android", "Travel
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelApp.iOS", "TravelApp\TravelApp.iOS\TravelApp.iOS.csproj", "{AB7C25AB-B014-482F-AAD6-3966E98C2249}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelApp", "TravelApp\TravelApp\TravelApp.csproj", "{C611DA44-5FEF-4CFB-BBD5-A5DCFAA17D3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TravelApp", "TravelApp\TravelApp\TravelApp.csproj", "{C611DA44-5FEF-4CFB-BBD5-A5DCFAA17D3F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{16A589A0-F28E-4613-A33D-ECDB1A02244F}"
+	ProjectSection(SolutionItems) = preProject
+		SQlite.txt = SQlite.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
