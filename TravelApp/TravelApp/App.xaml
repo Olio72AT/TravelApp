@@ -5,6 +5,19 @@
     <Application.Resources>
         <ResourceDictionary>
             <Color x:Key="blueColor">#1E90FF</Color>
+            <Color x:Key="whiteColor">#ffffff</Color>
+
+            <!-- Implicit styles - for all Buttons -->
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource blueColor}"></Setter>
+                <Setter Property="TextColor" Value="White"></Setter>
+            </Style>
+
+            <!-- Explicit styles - for Buttons with Style "normalButton" -->
+            <Style x:Key="normalButton"  TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource blueColor}"></Setter>
+                <Setter Property="TextColor" Value="DarkRed"></Setter>
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

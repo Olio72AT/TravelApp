@@ -14,11 +14,12 @@
     <StackLayout BackgroundColor="White" VerticalOptions="Center" Margin="15">
         <Entry Placeholder="Email"  x:Name="EmailEntry" Keyboard="Email" BackgroundColor="AntiqueWhite" TextColor="{StaticResource blueColor}"></Entry>
         <Entry Placeholder="Password" x:Name="PasswordEntry" IsPassword="True" BackgroundColor="AntiqueWhite" TextColor="{StaticResource blueColor}"></Entry>
-        <Button x:Name="LoginButton"
-            BackgroundColor="{StaticResource Key=blueColor}" 
-                Text="Login now ..." 
-                TextColor="AntiqueWhite"
-                Clicked="LoginButton_Clicked"></Button>
+        <Button x:Name="LoginButton" Text="Login now ..." Clicked="LoginButton_Clicked"></Button>
+        <!-- Replaced globally -->
+        <!--BackgroundColor="{StaticResource Key=blueColor}"-->
+        <!--TextColor="AntiqueWhite"-->
+
+        <Button x:Name="TestButton" Style="{StaticResource normalButton}"  Text="Test button ..." Clicked="LoginButton_Clicked"></Button>
     </StackLayout>
 
 </ContentPage>
