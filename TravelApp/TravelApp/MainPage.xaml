@@ -3,11 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TravelApp.MainPage" BackgroundColor="Gray">
 
+    <!-- moved to App.xaml for global access
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="blueColor">#1E90FF</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>-->
+    
     <StackLayout BackgroundColor="White" VerticalOptions="Center" Margin="15">
-        <Entry Placeholder="Email"  x:Name="EmailEntry" Keyboard="Email" BackgroundColor="AntiqueWhite" TextColor="CadetBlue"></Entry>
-        <Entry Placeholder="Password" x:Name="PasswordEntry" IsPassword="True" BackgroundColor="AntiqueWhite"></Entry>
+        <Entry Placeholder="Email"  x:Name="EmailEntry" Keyboard="Email" BackgroundColor="AntiqueWhite" TextColor="{StaticResource blueColor}"></Entry>
+        <Entry Placeholder="Password" x:Name="PasswordEntry" IsPassword="True" BackgroundColor="AntiqueWhite" TextColor="{StaticResource blueColor}"></Entry>
         <Button x:Name="LoginButton"
-            BackgroundColor="CadetBlue" 
+            BackgroundColor="{StaticResource Key=blueColor}" 
                 Text="Login now ..." 
                 TextColor="AntiqueWhite"
                 Clicked="LoginButton_Clicked"></Button>
