@@ -35,16 +35,17 @@ namespace TravelApp
             }
         }
 
-        public static async Task GetData()
+        public static async Task<string> GetData()
         {
             Thread.Sleep(2000);   // Simulation of Internet access
+            return "completed";
         }
 
         public async void SimulateInternet()
         {
             Console.WriteLine("before");
-            await GetData();
-            Console.WriteLine("after"); 
+            var result = await GetData();
+            Console.WriteLine("after " + result); 
         }
     }
 }
