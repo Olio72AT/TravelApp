@@ -1,0 +1,3 @@
+NUGET for all devices:
+
+Xamarin.Forms.Maps

@@ -11,6 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TravelApp", "TravelApp\Trav
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{16A589A0-F28E-4613-A33D-ECDB1A02244F}"
 	ProjectSection(SolutionItems) = preProject
+		FormMaps.txt = FormMaps.txt
 		SQlite.txt = SQlite.txt
 	EndProjectSection
 EndProject
