@@ -14,7 +14,7 @@ namespace TravelApp
         public MainPage()
         {
             InitializeComponent();
-            SimulateInternet();
+            // SimulateInternet();
         }
 
         private void LoginButton_Clicked(object sender, EventArgs e)
